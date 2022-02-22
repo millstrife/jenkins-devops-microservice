@@ -10,11 +10,8 @@
 // 	}
 // }
 pipeline {
-	// agent any
+	agent any
 	// agent { docker { image 'maven:3.6.3' } } 
-	agent { 
-		docker { image 'node:16.13.1-alpine' } 
-	}
 	stages {
 		stage('Build') {
 			steps {
