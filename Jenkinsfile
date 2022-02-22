@@ -10,7 +10,9 @@
 // 	}
 // }
 pipeline {
-	agent { docker { image 'maven:3.6.3' } } 
+	agent any
+	// agent { docker { image 'maven:3.6.3' } } 
+	agent { docker { image 'node:latest' } }
 	stages {
 		stage('Build') {
 			steps {
