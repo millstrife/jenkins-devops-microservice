@@ -70,6 +70,7 @@ pipeline {
 				}
 			}
 		}
+	}
 	post {
 		always {
 			echo 'I run always'
@@ -81,5 +82,4 @@ pipeline {
 			echo 'I run when it fails'
 		}
 	}
-}
 }
